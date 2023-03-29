@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+@font-face {
+    font-family: 'KCC-Ganpan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/note.png) ;
+}
+
+h1 {
+    font-family: 'Single Day';
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+#title {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+#clock {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 5rem;
+    color: black;
+    text-shadow: 0 0 40px skyblue;
+}
+
+#todo-form {
+    text-align: center;
+    padding-top: 70px;
+}
+
+#todolist {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    list-style-type: none;
+    list-style-image: url(../img/pen.svg);
+}
+
+
+
+#todolist li {
+    font-family: 'single day';
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+#todolist li button {
+    float: right;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#todolist li button:hover {
+    background-color: lightblue;    
+}
+
+
+#todolist li :checked {
+    color: gray;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px black solid;
+    color: black;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input[type="text"]+input[type="submit"] {
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 7px;
+    font-weight: bolder;
+}
+
+input[type="text"]+input[type="submit"]:hover {
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+#work {
+    display: flex;
+    justify-content:center;
+    padding: 30px 0;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 30px skyblue;
+}
+
+#p1 {
+    margin-right: 60px;
+}
+
+
+span{
+    margin-right: 20px;
+    position:relative;
+    left: 10px;
+    bottom: 10px;
+    width:20px;
+    height: 50px;
+    animation:ball 1s ease-in Infinite Alternate;
+}
+
+@keyframes ball {
+    0% {
+    top:-10px;
+    }
+    95% {
+    width: 20px;
+    }
+    to {
+    top:20px;
+    width:10px;
+    height:30px
+    } 
+}

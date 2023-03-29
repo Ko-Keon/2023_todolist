@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./CSS/reset.css">
+<link rel="stylesheet" href="./CSS/style2.css">
+<body>
+    <!-- 제목 -->
+    <h1 id="title"><span>#</span><span>To Do List</span></h1>
+
+    <!-- 시계 -->
+    <h1 id="clock">00:00:00</h1>
+
+    <!-- 할 일 입력창 -->
+    <form id="todo-form" action="" >
+        <input type="text" placeholder="투두를 입력해주세요" required>
+        <input type="submit" value="todo">
+    </form>
+
+    <!-- 전체 할 일 / 완료한 할 일 -->
+    <div id="work">
+        <p id="p1">전체할 일 0</p>
+        <p id="p2">완료한 일 0</p>
+    </div>
+
+    <!-- 할 일 리스트 입력 공간 -->
+    <ul id="todolist" >
+        <li hidden>
+            <input type="checkbox">
+            투두리스트
+            <button>X</button>
+        </li>
+    </ul>
+
+
+
+    <script src="./JS/clock2.js"></script>
+    <script src="./JS/todolist2.js"></script>
+    <script src="./JS/work.js"></script>
+</body>
+</html>
